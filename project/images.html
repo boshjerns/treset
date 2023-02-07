@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Image Page</title>
+  </head>
+  <body>
+    <img id="displayed-image" alt="">
+    <script>
+      const imageName = window.location.search.split("=")[1];
+      const image = document.getElementById("displayed-image");
+      image.src = imageName;
+    </script>
+  </body>
+</html>
